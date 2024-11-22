@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Updated confetti CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="question">
+            <pre>Would you like to go out with me, Alexa? 🥺</pre>
+        </div>
+        <div class="buttons">
+            <button id="yesBtn" onclick="handleYes()">Yes</button>
+            <button id="noBtn" onmouseover="moveButton()">No</button>
+        </div>
+        <div id="success" class="success">
+            <div class="success-yay">YAY! 🎉</div>
+            <div class="success-message">Lessgooooo!!</div>
+            <div class="gif-container">
+                <div class="video-wrapper">
+                    <div style="width:100%;height:0;padding-bottom:63%;position:relative;">
+                        <iframe 
+                            src="https://giphy.com/embed/S5h4gvxxc1qlG" 
+                            width="100%" 
+                            height="100%" 
+                            style="position:absolute" 
+                            frameBorder="0" 
+                            class="giphy-embed" 
+                            allowFullScreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
