@@ -2,24 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>A Special Question</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Updated confetti CDN -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="question">
-            <pre>Would you like to go out with me, Alexa? 🥺</pre>
+            Would you like to go out with me, Alexa? 🥺
         </div>
         <div class="buttons">
             <button id="yesBtn" onclick="handleYes()">Yes</button>
-            <button id="noBtn" onmouseover="moveButton()">No</button>
+            <button id="noBtn" ontouchstart="moveButton()" onmouseover="moveButton()">No</button>
         </div>
         <div id="success" class="success">
             <div class="success-yay">YAY! 🎉</div>
-            <div class="success-message">Lessgooooo!!</div>
+            <div class="success-message">LESSGOOO!!</div>
             <div class="gif-container">
                 <div class="video-wrapper">
                     <div style="width:100%;height:0;padding-bottom:63%;position:relative;">
@@ -37,6 +36,9 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+      Made with <span class="heart">❤️</span> by Prabh © 2024
+  </footer>
     <script src="script.js"></script>
 </body>
 </html>
